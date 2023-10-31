@@ -1,3 +1,4 @@
+// Function to get a priority tag based on a numeric priority value
 const getPriorityTag = (priority) => {
     switch (priority) {
         case 1: return "Low";
@@ -8,6 +9,7 @@ const getPriorityTag = (priority) => {
     }
 }
 
+// Function to get a user's name by their ID from a list of users
 const getUserName = (users, id) => {
     for (let i = 0; i < users.length; i++) {
         if (users[i].id === id) return users[i].name;
@@ -16,6 +18,7 @@ const getUserName = (users, id) => {
     return "No Name Found";
 }
 
+// Function to order and group data based on ordering and grouping criteria
 const orderData = (ordering_way, grouping_way, data) => {
     if (ordering_way === grouping_way) {
         if (ordering_way === "priority") {
@@ -43,4 +46,5 @@ const orderData = (ordering_way, grouping_way, data) => {
     return data;
 }
 
-export { getPriorityTag, getUserName, orderData }
+export { getPriorityTag, getUserName, orderData };
+

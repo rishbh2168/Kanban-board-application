@@ -6,9 +6,10 @@
 
 .main-dropdown {
   border-radius: 0.5rem;
-  border: 1px solid rgb(224, 222, 222);
+  border: 1px solid #e0dede;
   padding: 2px 8px 4px;
-  width: fit-content;
+  width: -moz-fit-content; /* For Firefox 3+ and Firefox for Android 4+ */
+  width: fit-content; /* For other browsers */
   font-weight: 500;
   cursor: pointer;
 }
@@ -21,10 +22,10 @@
   gap: 0.8rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 10px rgb(224, 222, 222);
+  box-shadow: 1px 1px 10px #e0dede;
   border-radius: 0.5rem;
-  border: 1px solid rgb(224, 222, 222);
-  background-color: rgb(245, 244, 244);
+  border: 1px solid #e0dede;
+  background-color: #f5f4f4;
 }
 
 .dropdown-item {
@@ -41,5 +42,6 @@
   width: 5rem;
   outline: none;
   border-radius: 5px;
-  border: 1px solid rgb(224, 222, 222);
+  border: 1px solid #e0dede;
 }
+
